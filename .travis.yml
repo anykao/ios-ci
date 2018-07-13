@@ -6,4 +6,6 @@ branches:
 before_install:
   - echo "nihao"
 script:
+  - set -o pipefail
+  - xcodebuild -version
   - xcodebuild -showsdks
